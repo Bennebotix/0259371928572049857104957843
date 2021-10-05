@@ -34,7 +34,7 @@
         // fix google search replaceState
         window.history._womginx_replaceState = window.history.replaceState;
         window.history.replaceState = function (stateObj, title, url) {
-            if (window.location.pathname.startsWith("/main/https://www.google.com")) {
+            if (window.location.pathname.startsWith("/proxy/https://www.google.com")) {
                 url = "";
             }
             return this._womginx_replaceState(stateObj, title, url);
