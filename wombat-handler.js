@@ -231,7 +231,7 @@
         });
 
         var getProxyUrl = function () {
-            return window.location.href.match(/^https?:\/\/[^\/]+\/main(\/[^_\/]+_)?\/(.*)/)[2];
+            return window.location.href.match(/^https?:\/\/[^\/]+\/proxy(\/[^_\/]+_)?\/(.*)/)[2];
             // return window.location.href;
         };
         // unfortunately, I was not able to find another way of copying the window.location
