@@ -9,8 +9,8 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="index.css" rel="stylesheet">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="shortcut icon" type="image/png" href="logo.png" />
-    <title>NGINX Proxy</title>
+    <link rel="shortcut icon" type="image/png" href="A4505CCF-D2C2-4AC6-B9AE-CAC9D5A1C678.png" />
+    <title>Proxy Unblocker</title>
 </head>
 
 <body>
@@ -21,22 +21,21 @@
                 function go() {
                     var input = document.getElementById('url-target');
                     if (input.value) {
-                        window.open('/main/' + input.value);
+                        window.open('/proxy/' + input.value);
                     } else {
                         alert('Please provide a link. It does not require https://.');
                     }
                 }
             </script>
-            <span class="w3-xlarge">Input your URL here: </span>
+            <span class="w3-xlarge">URL: </span>
             <div>
-                <input class="w3-xlarge" type='text' placeholder='https://www.google.com' id='url-target'
+                <input class="w3-xlarge" type='text'  id='url-target'
                     onkeydown='if(event.key==="Enter") go()' />
-                <button onclick='go()' class="w3-xlarge">Go!</button>
+                <button onclick='go()' class="w3-xlarge">Go</button>
             </div>
             <br>
             <br>
             </p>
-            <p class="w3-medium">View GitHub source <a class="w3-medium" href="https://github.com/binary-person/womginx">here</a></p>
         </div>
     </div>
 </body>
